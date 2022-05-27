@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="suzuka, graphic design, design, art, installation, cute, gallrey, workshop" />
+        <link href="FP_CSS.css" rel ="stylesheet" />
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600' rel='stylesheet' >
+		<link href='http://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' >
+        <link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="FP_JS.js" defer></script>
+        <title>Suzuka's Art Gallery</title>
+	</head>
+
+	<body>
+        <header class="header">
+            <div class="row">
+                <div class="left">
+                    <h1 id="suzuka"><img src="logo.png" alt="logo" width="50px"/> Suzuka's Art Gallery</h1>
+                </div>
+                <div class="right"> 
+                    <ul class="Navigation">
+                        <li id="list"><a href="FP_home.html"><strong>Home</strong></a></li>
+                        <!-- <li id="list"><a href="FP_art.html">Art</a></li> -->
+                        <li id="list"><a href="FP_event.html">Event</a></li>
+                        <li id="list"><a href="FP_about.html">About</a></li>
+                        <li id="list"><a href="FP_contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="todaysHour">
+            <strong>Today's Hours</strong>
+            <br>
+        </div>
+		<div class="main">
+        </div>
+		<div class="contact">
+			<div id="purple">
+			<h2>Contact</h2>
+			<form id="register" action="http://wwww.example.com/suzukanatsuhara/register" method="post">
+                <div class="flex-container">
+					<div id="contactType">
+							<label for="contactType">What would you like to do?</label>
+
+							<!-- <label for="workShop">Work Shop</label>
+							<input type="radio" name="workShop" value="workShop" checked="checked" id="workShop" />
+							<label for="tour">Tour</label>
+							<input type="radio" name="tour" value="tour" id="tour" /> 
+							<label for="maybe">Inquary</label>
+                   			<input type="radio" name="inquary" value="Inquary" id="inquary" />
+						-->
+				<br>
+						<label class="col-25" for="contactType"></label>
+						<input type="radio" name="contactType" value="workShop" checked="checked" id="workShop" />
+						<label for="workShop">Work Shop</label>
+						<br>
+						<label class="col-25" for="contactType"></label>
+						<input type="radio" name="contactType" value="tour" id="tour"/>
+						<label for="tour">Guided Tour</label>
+						<br>
+						<label class="col-25" for="contactType"></label>
+						<input type="radio" name="contactType" value="inquary" id="inquary"/>
+						<label for="inquary">Inquary</label>
+					</div>
+					<br>
+					<div>
+						<label for="visit">Visit Date:</label>
+						<input name="visitDate" id="visit" type="date" />
+					</div>
+                    <br>
+                    <div>
+                        <label for="contactType">please choose the visiting time:</label>
+                        <select name="visitTAime" id="time" >
+                            <option value="eleven">11:00 am</option>
+                            <option value="one">13:00 pm</option>
+                            <option value="three">15:00 pm</option>
+                        </select>
+                    </div>
+					
+					<br>
+					<br>
+					<div>
+						<label for="guestSpin">Total of guests? <em>(please include yourself)</em> :</label>
+						<input name="totalGuests" id="guestSpin" type="number" value="1" step="1" min="1" max="10"/>
+					</div>
+						<br>
+						<div >
+							<label class="col-25" for="addGuest">Add Guest(s):</label>
+							<input id="addBtn" type="button" value="Add Guest" onclick="addGuest()"/>
+						</div>
+                        <div onload="createTable()" id="guestRow">
+                            <table id="newTable">
+                                <tr>
+                                <td>First Name:</td>
+                                <td>Last Name:</td>
+                                </tr>
+                            </table>
+                        </div>
+						<br>
+						<p><b>Your Personal Information</b></p>
+                    <div><label class="col-25" for="fisrtname">First Name:</label>
+                        <input class="col-75" type="text" name="fisrtname" id="fisrtname" size="25" 
+                        maxlength="50" required />
+					</div>
+					
+
+					<br>
+                    <div>
+                        <label class="col-25" for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lasttname" size="25" maxlength="50" />
+                    </div>
+                </br>
+                    <div>
+                        <label class="col-25" for="emailaddress">Email Address:</label>
+                        <input type="email" name="emailaddress" id="emailaddress" size="25" 
+                        maxlength="50" placeholder="yourname@example.com" required />
+                    </div>
+                </br>
+                    <div>
+                        <label class="col-25" for="tellnumber">Telephone Number:</label>
+                        <input type="tel" name="tellnumber" id="tellnumber" size="20" maxlength="50"
+                         required placeholder="x-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}" />
+                    </div>
+                    
+                    <div>
+                        <label class="col-25" for="url"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="col-25" for="bio">Comments:</label>
+                        <textarea name="bio" cols="30" rows="6" id="Comments"></textarea>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div><label class="col-25" for="city">City:</label>
+                        <input type="text" name="city" id="city" size="30" maxlength="50" />
+                    </div>
+                    <div>
+                        <label class="col-25" for="state">State:</label>
+                        <select name="state" id="state">
+                            <option value="alberta">Alberta</option>
+                            <option value="british columbia">British Columbia</option>
+                            <option value="ontario">Ontario</option>
+                        </select>
+                    </div>
+                    <div><label class="col-25" for="zipcode">ZIP Code:</label>
+                        <input type="text" name="zipcode" id="zipcode" size="10" maxlength="20" />
+                    </div>
+                    <br/>
+                    <div>
+						<input type="checkbox" name="updates" value="yes" checked="checked" id="s1"/>
+						<label for="s1">Sign me up for email updates</label> 
+					</div>
+					<br>
+                    <div id="buttons">  
+						<input type="submit" id="submitBtn" value="Submit" />
+                        <input type="reset" id="resetBtn" value="Cancel" />
+                    </div>
+                </div>
+            </form>
+		</div>		
+        <div class="footer">
+            <footer>
+                <div id="address">
+                    Suzuka's Art Gallery<br>
+                    7777 Main St<br>
+                    Portland, OR<br>
+                    97405
+                </div>
+                <div id="contactInfo">
+                    Office: (236)-123-7777<br>
+                    Business: suzuka@artgallery.com
+                    <br>
+                    <br>
+                    Copy Right 2019 &copy; Suzuka's Art Gallery
+                </div>
+            </footer>
+        </div>
+	</body>
+</html>

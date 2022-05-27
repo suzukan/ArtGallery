@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+html {
+	background-color: #F5EDE1;
+}
+body {
+	font-family: "Dosis", "Days One", sans-serif;
+	font-size: 20px;
+	color: #F2A049; 
+	width: 100%;
+	margin: auto;
+}
+header {
+	margin: 0% 5%;
+}
+.left {
+	float: left;
+	width: 65%;
+	}
+	
+.right {
+	float: right;
+	}
+
+strong{
+	color: #F2A049 ;
+	}
+
+#todaysHour {
+	float: right;
+	margin-right: 5%;
+	text-align: right;
+	}	
+
+.container {
+	margin-left: 15%;
+}
+
+h1 {
+	font-family: 'Comfortaa', cursive;
+	font-size: 40px;
+	margin-top: 0;
+}
+ul {
+	margin: 0;
+}
+.Navigation li {
+	float: left;
+	list-style: none;
+    margin-left: 30px;
+    margin-top: 15px;
+
+}
+.Navigation :hover{
+	text-decoration: underline;
+}
+.Navigation a {
+text-decoration: none;
+}
+.row {
+	margin-top: 30px;
+}
+.row::after {
+clear: both;
+content:'';
+display: block;
+}
+.artwork1 {
+	width: 300px;
+	height: 200px;
+	float: left;
+	padding-right: 16.6px;
+	padding-left: 16.6px;
+	margin-bottom: 80px;
+}
+
+.thumbnail {
+	position: relative;
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+	box-shadow: rgb(202, 174, 122) 0px 0px 10px;
+
+}
+.thumbnail img {
+	position: absolute;
+	height: auto;
+	width: 100%;
+}
+
+img {
+border-radius: 5px;
+}
+
+.picTitle {
+	padding-bottom: 50px;
+	text-align: center;
+	color: #2AB573;
+}
+
+
+.main h2 {
+text-align: center;
+margin-bottom: 0;
+clear: both;
+}
+
+#button :hover {
+	color: #EF7A5B;
+	text-decoration: underline;
+}
+
+#list :hover {
+	color:#2AB573;
+	text-decoration: underline;
+}
+
+.biography {
+	padding-top:30px;
+	display: block;
+	margin: auto;
+}
+.biography p {
+	width:55%;
+	margin-left: 5%;
+	padding-left: 100px;
+	padding-right: 60px;
+	float: left;
+}
+#red {
+	color: #2AB573;
+}
+#green {
+	color: #2AB573;
+	padding-bottom: 50px;
+}
+#purple {
+	color: #734F99;
+}
+#green p {
+	padding-bottom: 20px;
+}
+
+#me img{
+	width:300px;
+	height: 300px;
+	display: block;
+	margin-top:30px;
+	margin-bottom:30px;
+	border-radius: 5px;
+	animation-name:  spin;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	box-shadow: rgb(202, 174, 122) 0px 0px 10px;
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.contact tr th{
+	width: 30%;
+	padding-top: 5px;
+	display: inline-block;
+}
+
+.contact {
+	margin: auto;
+	display: center;
+}
+
+.contact h2 {
+	text-align: center;
+	clear: both;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 38%;
+	margin-bottom: 30px;
+	}
+label {
+	margin-right: 3px;
+}
+input, textarea {
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.box {
+	margin: auto;
+}
+
+button[type='button'] {
+	background-color: #2AB573;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	color: white;
+}
+
+#submitBtn, #addBtn {
+	background-color: #F2A049;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 10px;
+	color: white;
+	border: 1px solid;
+}
+#resetBtn, #delete {
+	background-color: #2AB573;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 10px;
+	color: white;
+	border: 1px solid;
+}
+
+.vandf {
+	list-style: none;
+	display: block;
+	margin: auto;
+	padding: 0;
+	margin-top: 30px;
+}
+.vandf img {
+	width:700px;
+	display: block;
+	margin: auto;
+	padding-bottom: 50px;
+}
+
+#button a{
+	text-decoration: none;
+	padding-bottom: 50px;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+footer {
+	margin: auto;
+    text-align: center;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 7%;
+	background-color: #F2A049;
+	color: white;
+}
+
+div#address {
+	float: left;
+	text-align: left;
+	margin-left: 3%;
+}
+div#contactInfo {
+	float: right;
+	text-align: right;
+	margin-right: 3%;
+}
+
+/* div#guestRow {
+	display: none; 
+} */
+
+Table, th, td {
+	border: solid 1px rgb(220, 241, 220);
+	padding: 2px 3px;
+	text-align: left;
+}
+div#calendar {
+	margin-left: 20%;
+	margin-top: 35px;
+}
+div#welcome {
+	text-align: center;
+	margin-top: 30px;
+}
+  video {
+    box-shadow: rgb(202, 174, 122) 0px 0px 10px;
+    display: block;
+    margin: 20px auto;
+	width: 40%;
+	transition: background linear 5s;
+}
+
+#calendarTable {
+	background-color: cornsilk; 
+	width: 75%;
+	box-shadow: rgb(142, 182, 123) 0px 0px 5px;
+ }
+ 
+ #calendarTable caption {
+	caption-side: top; 
+	text-align: center;
+	padding-bottom: 20px; 
+	font-size: 1.6em; 
+	letter-spacing: 0.3em;
+ }
+ 
+ .calWeekdays {
+	background-color: ivory;
+	width: 14.28%; 
+	font-size: 1em; 
+	border-bottom: 3px solid rgb(142, 182, 123);
+ }
+ 
+ div#googleMap {
+	 margin-left: 35%;
+ }
+ iframe {
+	box-shadow: rgb(142, 182, 123) 0px 0px 5px;
+ }
